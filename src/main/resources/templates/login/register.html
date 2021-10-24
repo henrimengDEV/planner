@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="layout/header :: header"></div>
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Register</title>
+</head>
+<body>
+<div class="container-fullscreen display-center">
+    <div class="wrapper">
+        <h3 class="text-center mb-4">Login</h3>
+        <form action="" class="form-custom">
+            <input class="input-custom" type="text" placeholder="username">
+            <input class="input-custom" type="text" placeholder="email">
+            <input class="input-custom" type="text" placeholder="password">
+            <input class="input-custom" type="text" placeholder="confirm password">
+        </form>
+        <div class="actions">
+            <a th:href="@{/login}">Cancel</a>
+            <input class="input-submit-custom" type="submit" value="Validation">
+        </div>
+    </div>
+</div>
+</body>
+</html>
