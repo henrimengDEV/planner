@@ -2,36 +2,85 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <div th:replace="layout/header :: header"></div>
+    <link rel="stylesheet" href="/css/home.css">
     <title>Home</title>
 </head>
 <body>
 
-<div class="container-fullscreen display-center">
-    <h1 class="title">Spaces</h1>
-    <div class="actions">
-        <button>search SPACE</button>
-        <button>create SPACE</button>
+<div class="container-fullscreen display-center direction-column bg-dark text-white">
+
+    <nav class="navbar-custom">
+        <p>Navbar</p>
+        <div class="nav-links">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+        </div>
+        <a class="logout" th:href="@{/login}">Disconnect</a>
+    </nav>
+
+    <div class="wrapper">
+        <h1 class="title">Spaces</h1>
+        <div class="actions">
+            <div class="input-search-space">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Description">
+                <input type="number" placeholder="Members">
+                <button>
+                    SEARCH
+                </button>
+            </div>
+            <button class="btn btn-light">create SPACE</button>
+        </div>
+        <table class="table table-dark table-striped">
+            <thead>
+            <tr>
+                <td>Name</td>
+                <td>Description</td>
+                <td>Members</td>
+                <td>Actions</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <div>Discordtheque</div>
+                    <div class="fw-lighter fst-italic">By Henri</div>
+                </td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi consectetur deleniti
+                    ducimus eligendi error facilis, impedit ipsa iusto minima molestiae necessitatibus perspiciatis
+                    unde! Accusamus commodi et quos ullam voluptates?
+                </td>
+                <td>3/100</td>
+                <td>Join</td>
+            </tr>
+            <tr>
+                <td>
+                    <div>Pokemon</div>
+                    <div class="fw-lighter fst-italic">By Pikachu</div>
+                </td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi consectetur deleniti
+                    ducimus eligendi error facilis
+                </td>
+                <td>87/100</td>
+                <td>Join</td>
+            </tr>
+            <tr>
+                <td>
+                    <div>LOL</div>
+                    <div class="fw-lighter fst-italic">By Rito</div>
+                </td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi consectetur deleniti
+                    ducimus eligendi error facilis, impedit ipsa iusto minima molestiae necessitatibus perspiciatis
+                    unde! Accusamus.
+                </td>
+                <td>100/100</td>
+                <td>Join</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
-    <table class="table-custom">
-        <thead>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-        </tr>
-        </tbody>
-    </table>
 </div>
 
 <div th:replace="layout/footer :: footer"></div>

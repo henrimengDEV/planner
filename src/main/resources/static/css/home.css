@@ -1,0 +1,61 @@
+/* A ------------------------------------------------------------------------------------*/
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* B ------------------------------------------------------------------------------------*/
+
+.btn-create-space {
+    border: none;
+    border-radius: 8px;
+    background-color: aliceblue;
+    padding: 8px;
+}
+
+/* I ------------------------------------------------------------------------------------*/
+
+.input-search-space {
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding: 5px 5px 5px 20px;
+}
+.input-search-space > input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.input-search-space > button {
+    border: none;
+    border-radius: 8px 25px 25px 8px;
+    background-color: indianred;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.input-search-space > button:hover {
+    animation: breathing 5s linear infinite;
+}
+
+
+/* T ------------------------------------------------------------------------------------*/
+
+.table-custom {
+    border-collapse: separate;
+    border-spacing: 10px 20px;
+    width: 100%;
+}
+.table-custom > thead {
+    font-weight: 700;
+}
+
+/* W ------------------------------------------------------------------------------------*/
+
+.wrapper {
+    width: 80%;
+    border-radius: 8px;
+    padding: 10px;
+}

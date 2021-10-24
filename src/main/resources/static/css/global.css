@@ -9,6 +9,10 @@
     justify-content: center;
 }
 
+.direction-column {
+    flex-direction: column;
+}
+
 .form-custom {
     display: flex;
     flex-direction: column;
@@ -33,6 +37,57 @@
     background-color: aliceblue;
     transition: all 0.5s ease;
 }
+
 .input-submit-custom:hover {
     background-color: #add9ff;
+}
+
+/* N ------------------------------------------------------------------------------------*/
+
+.navbar-custom {
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    padding: 20px;
+    top: 0;
+    width: 100%;
+}
+.navbar-custom > p {
+    position: absolute;
+    left: 20px
+}
+.navbar-custom > .logout {
+    position: absolute;
+    right: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links > a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/* Animation ----------------------------------------------------------------------------*/
+
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
