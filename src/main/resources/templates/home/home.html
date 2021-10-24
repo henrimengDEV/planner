@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="layout/header :: header"></div>
+    <title>Home</title>
+</head>
+<body>
+
+<div class="container-fullscreen display-center">
+    <h1 class="title">Spaces</h1>
+    <div class="actions">
+        <button>search SPACE</button>
+        <button>create SPACE</button>
+    </div>
+    <table class="table-custom">
+        <thead>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div th:replace="layout/footer :: footer"></div>
+</body>
+</html>
