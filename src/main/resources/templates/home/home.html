@@ -3,7 +3,6 @@
 <head>
     <div th:replace="layout/header :: header"></div>
     <link rel="stylesheet" href="/css/home.css">
-    <title>Home</title>
 </head>
 <body>
 
@@ -53,7 +52,9 @@
                     unde! Accusamus commodi et quos ullam voluptates?
                 </td>
                 <td>3/100</td>
-                <td>Join</td>
+                <td>
+                    <a th:href="@{/space(id='1')}">Join</a>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -64,7 +65,9 @@
                     ducimus eligendi error facilis
                 </td>
                 <td>87/100</td>
-                <td>Join</td>
+                <td>
+                    <a th:href="@{/space(id='1')}">Join</a>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -76,7 +79,9 @@
                     unde! Accusamus.
                 </td>
                 <td>100/100</td>
-                <td>Join</td>
+                <td>
+                    <a th:href="@{/space(id='1')}">Join</a>
+                </td>
             </tr>
             </tbody>
         </table>
